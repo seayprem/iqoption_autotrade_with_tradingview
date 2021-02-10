@@ -1,24 +1,53 @@
 from iqoptionapi.stable_api import IQ_Option
+from tradingview_ta import TA_Handler, Interval, Exchange, Compute
+import logging 
 
 
+# Username & Password
+print("Logging")
+API = IQ_Option("username || email", "password")
 
-# Login
-def signIn(username, password):
-    global API = IQ_Option(username, password)
-    global API.connect()
-    return True
+# Connected
+API.connect()
+print("Login Success.")
+
+# Change Mode Balance
+# 1. REAL
+# 2. PRACTICE
+API.change_balance("REAL")
+
+# Check Balance
+def balance():
+    value = API.get_balance()
+    return value
 
 
-# Mode Real Money & PRATICE Money
-# You can change this here.
-def changeModeBalance():
+# trackingTradingview Signal
+# Example EURUSD
+# If EURUSD send BUY
+# system send you message "buy"
+def trackingTradingview():
+    forex = TA_Handler(
+        symbol = "EURUSD",
+        screener = "forex",
+        exchange = Exchange.FOREX,
+        interval = Interval.INTERVAL_5_MINUTES
+    ) 
+
+    analysis = forex.get_analysis()
+    return analysis.summary['RECOMMENDATION']
+    # return Compute.PSAR(analysis.indicators["P.SAR"], analysis.indicators["open"])
+
+# Order
+def binaryMode(money, active, action, expirations_mode):
+    binary = API.buy(money, active, action, expirations_mode)
+    return binary
+
+def processToOrder():
     pass
 
-
-# Tracking Signal StrongBuy Buy Nature Sell StrongSell
-def trackingSignal():
-    pass
-
-# Main Process
 if __name__ == "__main__":
-    pass
+    try:
+        print(trackingTradingview())
+    except KeyboardInterrupt:
+        print('bye')
