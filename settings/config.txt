@@ -1,0 +1,14 @@
+[SETTING]
+
+username = youremail or username
+password = your password 
+
+mode_balance = REAL
+symbol = EURUSD
+interval = Interval.INTERVAL_5_MINUTES
+
+money = 1
+exp_mode = 1
+
+loop_time = 3
+time_sleep = 5
