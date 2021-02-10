@@ -8,7 +8,8 @@ open source
 ### สามารถสนับสนุนค่ากาแฟได้
 
 ![alt text][logo]
-[logo]: https://img.wongnai.com/p/400x0/2017/09/23/f7f37362a32341d796b992ba4b58a68b.jpg "กาแฟนกนี้อร่อยนะ"
+
+[logo]: https://github.com/adam-p/markdown-here/raw/master/src/common/images/icon48.png "Logo Title Text 2"
 
 
 เดี๋ยวเปิดให้โอนเงินบริจาคนะ ^_^
