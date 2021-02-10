@@ -1,2 +1,4 @@
-# iqoption_autotrade_with_tradingview
+# Signal Follow Tradingview
 open source
+
+# สามารถสนับสนุนค่ากาแฟได้
