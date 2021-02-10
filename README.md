@@ -9,7 +9,7 @@ open source
 
 ![alt text][logo]
 
-[logo]: https://ed.edtfiles-media.com/ud/gal/dcp/37/110172/_DSF3938.JPG "Logo Title Text 2"
+[logo]: https://ed.edtfiles-media.com/ud/gal/dcp/37/110172/_DSF3938.JPG "Coffee mean a lot of my life"
 
 
 
