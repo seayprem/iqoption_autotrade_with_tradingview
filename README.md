@@ -9,7 +9,8 @@ open source
 
 ![alt text][logo]
 
-[logo]: https://github.com/adam-p/markdown-here/raw/master/src/common/images/icon48.png "Logo Title Text 2"
+[logo]: https://ed.edtfiles-media.com/ud/gal/dcp/37/110172/_DSF3938.JPG "Logo Title Text 2"
+
 
 
 เดี๋ยวเปิดให้โอนเงินบริจาคนะ ^_^
